@@ -6,3 +6,6 @@ node('master') {
   }
 }
 
+  stage('Test') {
+    sh './simplehttpserver/tests/unittests.sh ./simplehttpserver/'
+  }
